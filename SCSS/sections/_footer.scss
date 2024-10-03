@@ -1,0 +1,18 @@
+   /* FOOTER */
+   footer { /* Styla hela footern */
+    background-color: var(--color-white);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer .container { /* Styla elementen i containern */
+    height: auto;
+    color: var(--color-grey600);
+    font-size: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

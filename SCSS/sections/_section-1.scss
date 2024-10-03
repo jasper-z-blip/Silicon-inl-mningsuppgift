@@ -1,0 +1,13 @@
+#brands {
+    background-color: var(--color-white);
+}
+
+.section-1 {
+    display: none; 
+}
+
+.brand-box { /* Styla alla brand-boxar */
+    box-sizing: border-box;
+    border: 2px solid #E2E5F1; 
+    border-radius: .5rem; 
+}

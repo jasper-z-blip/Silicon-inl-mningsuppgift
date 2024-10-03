@@ -1,0 +1,32 @@
+ /* SECTION-3 */
+ #how-does-it-work {
+    background-color: var(--color-grey100);
+
+}
+.section-3 {
+    padding-bottom: 3rem;
+
+    display: flex;
+    flex-direction: column; /* Staplar elementen vertikalt */
+    align-items: center; /* Centrera horisontellt */
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .mobile-text {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.tablet, .desktop, .tablet-text, .frame, .desktop-text {
+        display: none; 
+}

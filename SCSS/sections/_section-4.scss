@@ -1,0 +1,62 @@
+ /* SECTION-4 */
+ #make-money {
+    background-color: var(--color-white);
+    position: relative;
+    display: none;
+}
+
+.text-1 {
+    margin-left: 5rem;
+    h2 {
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: var(--color-grey900);
+        padding-top: 4rem;
+    }  
+
+    .feat-list {
+        padding-bottom: 2rem;
+        padding-left: 1.5rem;
+    } 
+}
+
+.text-2 {
+        margin-top: 2rem;
+    
+        .headline-R {
+            grid-area: headline-R;
+        }
+    
+        .icon-1 {
+            grid-area: icon-1;
+        }
+    
+        .icon-3 {
+            grid-area: icon-3;
+        }
+    
+        .para-1 {
+            grid-area: para-1;
+        }
+    
+        .para-2 {
+            grid-area: para-2;
+        }
+} 
+    
+.btn-2, .btn-3 { 
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        border-radius: 5px;
+        padding: 8px 34px;
+        border: none;
+}
+
+.btn-2 i, .btn-3 i {
+    margin-left: .5rem; /* Justera storleken efter behov */
+}
+
+.btn-3 {
+    width: 11rem;
+}
+

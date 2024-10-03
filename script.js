@@ -1,4 +1,4 @@
-const toggleSwitch = document.getElementById('darkmode-switch');
+const toggleSwitch = document.getElementById('darkmode-switch'); //Hjälp av Chat-GPT och Joakims video//
 const body = document.body;
 
 if (localStorage.getItem('dark-mode') === 'enabled') {
@@ -21,23 +21,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const lightButtons = document.querySelector('.buttons');
     const darkButtons = document.querySelector('.buttons-dark');
 
-    // Initial uppdatering av knappsynlighet
     function updateButtonVisibility() {
         const isDarkMode = darkModeSwitch.checked;
 
         if (isDarkMode) {
-            lightButtons.style.display = 'none'; // Döljer ljusa knappar
-            darkButtons.style.display = 'flex'; // Visar mörka knappar
+            lightButtons.style.display = 'none';
+            darkButtons.style.display = 'flex';
         } else {
-            lightButtons.style.display = 'flex'; // Visar ljusa knappar
-            darkButtons.style.display = 'none'; // Döljer mörka knappar
+            lightButtons.style.display = 'flex';
+            darkButtons.style.display = 'none';
         }
     }
 
-    // Anrop av initial synlighet
     updateButtonVisibility();
 
-    // Lyssna på ändringar i dark mode-switch
     darkModeSwitch.addEventListener('change', function() {
         document.body.classList.toggle('dark-mode', this.checked);
         updateButtonVisibility();

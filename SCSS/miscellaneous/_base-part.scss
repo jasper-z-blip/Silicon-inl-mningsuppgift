@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+} 
+
+body, section, div, header, footer, main, nav, blockquote, p, span {
+      margin: 0;
+      padding: 0;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+    p, a, span {
+    color: var(--color-grey700);
+    }
+
+    h1, h2, h3 {
+        color: var(--color-grey900);
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}

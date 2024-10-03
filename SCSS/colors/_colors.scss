@@ -1,0 +1,67 @@
+:root { /* Samlar variabler */
+
+    /* Light-mode */
+    --color-grey100: #F3F6FF;
+    --color-grey200: #EFF2FC;
+    --color-grey300: #E2E5F1;
+    --color-grey400: #D4D7E5;
+    --color-grey500: #B4B7C9;
+    --color-grey600: #9397AD;
+    --color-grey700: #565973;
+    --color-grey800: #33354D;
+    --color-grey900: #0B0F19;
+    
+    --color-primary: #6366F1;
+    --color-chevron: #3E4265;
+    --color-error: #EF4444;
+    --color-success: #22C55E;
+    --color-warning: #FFBA08;
+    --color-info: #4C82F7;
+    --color-purple: #D946EF;
+    --color-white: #FFFFFF;
+    --color-box-white: #FFFFFF;
+    --color-dwhite: #F2F2F2;
+    --color-black: #00000000;
+    --color-text: #585C7B;
+    --color-savetext: #565973;
+    --color-savetext2: #565973;
+    --color-hamburger: #565973;
+
+    --custom-gradient-desktop: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
+    --custom-gradient: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
+    
+    --transition-time: 0.4s;
+}
+    /* Dark-mode */
+body.dark-mode {
+    --color-grey100: #131022;
+    --color-grey200: #FFFFFF0A;
+    --color-grey300: #E2E5F1;
+    --color-grey400: #D4D7E5;
+    --color-grey500: #B4B7C9;
+    --color-grey600: #9397AD;
+    --color-grey700: #565973;
+    --color-grey800: #33354D;
+    --color-grey900: #FFFFFF;
+    
+    --color-primary: #6366F1;
+    --color-chevron: #FFFFFF;
+    --color-error: #EF4444;
+    --color-success: #22C55E;
+    --color-warning: #FFBA08;
+    --color-info: #4C82F7;
+    --color-purple: #D946EF;
+    --color-white: #000000;
+    --color-box-white: #131022;
+    --color-dwhite: #1A1A1A;
+    --color-black: #00000000;
+    --color-text: #585C7B;
+    --color-savetext: #33354D;
+    --color-savetext2: #FFFFFF;
+    --color-hamburger: #FFFFFF;
+
+    --custom-gradient-desktop: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(30, 30, 30, 0.85) 50%, rgba(60, 60, 60, 0.6) 100%);
+    --custom-gradient: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(50, 50, 50, 1) 20%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.5) 60%, rgba(50, 50, 50, 1) 80%, rgba(0, 0, 0, 1) 100%);
+    
+    --transition-time: 0.4s;
+}

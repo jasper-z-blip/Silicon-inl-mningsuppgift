@@ -1,0 +1,120 @@
+ /* SECTION-6 */
+ #questions {
+    background-color: var(--color-white);
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+    .desktop-piece, .desktop-tablet-version-1, .desktop-tablet-version-2, .tablet-piece, .paragraph-tablet {
+        display: none;
+    }
+}
+
+.section-6 {
+    .box-1 {
+        text-align: center;
+    }
+}
+
+.box-1 {
+    p {
+        padding-bottom: 3rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+.mobile-version, .mobile-version-1, .mobile-version-text, .square, .square-1 {
+    border: 1.5px solid #E2E5F1;
+    background-color: var(--color-box-white);
+
+    p {
+        padding: 1rem;
+    }
+}
+
+.mobile-version, .mobile-version-1 {
+    .btn-circle-1 {
+        background-color: var(--color-primary);
+    }
+}
+
+.btn-circle, .btn-circle-1 {
+    background-color: var(--color-grey200);
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.8rem;
+
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}  
+
+.mobile-version, .mobile-version-1, .square, .square-1 {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    gap: 4rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    height: 7rem;
+
+    h3 {
+        padding-top: 1.5rem;
+    }
+}
+
+.mobile-version-1 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px ;
+    border-bottom: none;
+}
+
+.mobile-version {
+    .more {
+        padding-left: 2rem;
+    }
+}
+
+.square, .square-1, .mobile-version {
+    border-top: none;
+}
+
+.square-1 {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.can-i {
+    grid-area: can-i;
+}
+
+.lorem {
+    grid-area: lorem;
+}
+
+.button-box {
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-button {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    margin-top: 1rem;
+}
+
+.contact-button:hover {
+    background-color: var(--color-purple);
+    transform: scale(1.1);
+}

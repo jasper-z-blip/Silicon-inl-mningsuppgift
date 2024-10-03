@@ -1,0 +1,307 @@
+/* TABLET-LÄGE */
+@media (min-width: 768px) { /* Ändra i tablet-läge */
+    /* Header */
+.header .container { 
+    width: 728px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-toggle-switch .label {
+    display: block;
+}
+
+.mobile-menu { /* Styling på "hamburgermenyn" */
+   padding-left: 3rem;
+}
+
+    /* MAIN */
+#hero {
+    .images {
+        display: block;
+        position: relative;
+
+    }
+    .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "headline headline"
+                            "content images";
+
+    }
+
+    .buttons, .buttons-dark {
+            transform: scale(.9);
+    }
+
+    .content {
+        text-align: center;   
+    }
+
+    .save-text {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+.img-front-desktop {
+    display: none;
+}
+
+.img-front {
+    position: absolute;
+    z-index: -5;
+    bottom: -11.2rem;
+    transform: scale(.48);
+    left: 1.8rem;
+}
+
+.img-back {
+    position: absolute;
+    z-index: -10;
+    bottom: -9rem;
+    transform: scale(.48);
+    right: 2.5rem;
+}     
+
+    /* Section-1 */
+#brands .section-1 { /* Styla brandsen i relativitet till sectionen */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-top: 3rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: 2rem;
+}
+
+#brand-5, #brand-6 { 
+    display: none;
+}
+
+.brand-box {
+    width: 180px;
+    height: 90px;
+    padding: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    /* SECTION-2 */
+
+#app-features {
+    padding-bottom: 1rem;
+    .section-2 {
+        gap: .5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "text text"
+            "container-1 container-2";
+    }
+}
+
+    /* SECTION-3 */
+#how-does-it-work {
+    position: relative;
+    .tablet, .tablet-text, .frame {
+        display: block;
+    }
+
+    .mobile, .mobile-text {
+        display: none;
+    }
+
+    .frame {
+        position: absolute;
+        top: 4.55em;
+        left: 50%;
+        transform: translateX(-50%);
+        height: fit-content;
+    }
+}
+
+    /* SECTION 6 */
+#questions {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .tablet-piece, .desktop-tablet-version-1, .desktop-tablet-version-2, .paragraph-tablet, .square {
+        display: block;
+        margin-bottom: 1rem;
+        border: none;
+    }
+
+    .desktop-tablet-version-1, .desktop-tablet-version-2, .paragraph-tablet, .square {
+        background-color: var(--color-box-white);
+    }
+
+    .mobile-version, .mobile-version-1, .mobile-version-text, .contact-button, .desktop-piece {
+        display: none;
+    }
+
+    .section-6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .desktop-tablet-version-1, .square, .square-1 .square-2, .square-3 {
+            display: flex;
+            text-align: left;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-weight: 900;
+        }
+
+        .desktop-tablet-version-1 {
+            padding-right: 2rem;
+            padding-left: 1rem;
+            padding-top: 1rem; 
+        }
+    }
+
+    .desktop-tablet-version-2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        "can-i"
+        "lorem";
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        
+
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        .btn-circle-1 {
+                background-color: var(--color-primary);
+        }
+
+        h3 {
+            padding-top: 1.5rem;
+        }
+
+        .lorem {
+            color: var(--color-grey700);
+        }
+    }
+
+    .square-1 {
+        justify-content: space-between;
+        border-top: 2px solid #E2E5F1;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .tablet-piece {
+        display: flex;               
+        justify-content: space-between; 
+        margin-bottom: 2rem; 
+        margin-top: 2rem;   
+    }
+        
+    .square-2, .square-3 {
+        flex: 1; /* square-2 och square-3 tar lika mycket plats (hjälp från chat GPT hur man skulle göra det) */
+        text-align: center;
+        margin-right: 1rem;   
+        padding-bottom: 1rem;  
+        border: 2px solid var(--color-grey300);
+        border-radius: 7px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        gap: 1rem;
+    }
+
+    .square-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .square-2 img {
+        padding-top: 1rem;
+    }
+        
+    .square-3 {
+        margin-right: 0;  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .square-3 img {
+        padding-top: 1rem;
+    }
+}
+
+#contact-1 i {
+    margin-left: .5rem;
+    color: var(--color-primary);
+}
+
+#contact-1 {
+    span {
+        color: var(--color-primary);
+    }
+}
+
+#contact-2 i {
+    margin-left: .5rem;
+    color: var(--color-success);
+}
+
+#contact-2 {
+    span {
+        color: var(--color-success);
+    }
+}
+
+    /* SECTION-7 */
+#subscribe {
+    padding-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.section-7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container {
+    width: 36rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.box-7 {
+    padding-top: 1rem;
+}
+
+
+    /* Footer */
+footer .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    padding-right: .3rem;
+}
+}
+

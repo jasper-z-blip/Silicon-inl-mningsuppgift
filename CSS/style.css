@@ -42,7 +42,7 @@ body.dark-mode {
     --color-grey400: #D4D7E5;
     --color-grey500: #B4B7C9;
     --color-grey600: #9397AD;
-    --color-grey700: #565973;
+    --color-grey700: #9397AD;
     --color-grey800: #33354D;
     --color-grey900: #FFFFFF;
     
@@ -84,14 +84,14 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
+}
 
-    p, a, span {
+p, a, span, li {
     color: var(--color-grey700);
-    }
+}
 
-    h1, h2, h3 {
-        color: var(--color-grey900);
-    }
+h1, h2, h3 {
+    color: var(--color-grey900);
 }
 
 .wrapper {

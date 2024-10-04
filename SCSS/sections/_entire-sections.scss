@@ -1,14 +1,14 @@
     /* HEADER */
 header .container { 
-        padding-top: .5rem;
-        padding-right: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-        gap: 1rem;  
+    padding-top: .5rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;  
     
-        display: grid;
-        align-items: center;
-        grid-template-columns: auto 1fr auto auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto auto;
 }
 
 header {
@@ -29,7 +29,7 @@ a:hover {
     display: none;
 }
 
-.nav-link { /* Stylar "Features-länken" */
+.nav-link {
     color: var(--color-grey900);
     font-weight: 600;
     text-decoration: none;
@@ -70,7 +70,7 @@ a:hover {
     color: var(--color-hamburger);
 }
 
-.btn-toggle-switch { /* Styling på toggle-knappen */
+.btn-toggle-switch {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -243,7 +243,7 @@ a:hover {
     display: none; 
 }
 
-.brand-box { /* Styla alla brand-boxar */
+.brand-box {
     box-sizing: border-box;
     border: 2px solid #E2E5F1; 
     border-radius: .5rem; 
@@ -337,8 +337,8 @@ h3 {
     padding-bottom: 3rem;
 
     display: flex;
-    flex-direction: column; /* Staplar elementen vertikalt */
-    align-items: center; /* Centrera horisontellt */
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center;
 
@@ -417,7 +417,7 @@ h3 {
 }
 
 .btn-2 i, .btn-3 i {
-    margin-left: .5rem; /* Justera storleken efter behov */
+    margin-left: .5rem;
 }
 
 .btn-3 {
@@ -640,13 +640,13 @@ h3 {
 }
 
     /* FOOTER */
-footer { /* Styla hela footern */
+footer {
     background-color: var(--color-white);
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-footer .container { /* Styla elementen i containern */
+footer .container {
     height: auto;
     color: var(--color-grey600);
     font-size: 1rem;

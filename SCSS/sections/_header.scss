@@ -1,14 +1,14 @@
     /* HEADER */
-    header .container { 
-        padding-top: .5rem;
-        padding-right: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-        gap: 1rem;  
+header .container { 
+    padding-top: .5rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;  
     
-        display: grid;
-        align-items: center;
-        grid-template-columns: auto 1fr auto auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto auto;
 }
 
 header {
@@ -29,7 +29,7 @@ a:hover {
     display: none;
 }
 
-.nav-link { /* Stylar "Features-länken" */
+.nav-link {
     color: var(--color-grey900);
     font-weight: 600;
     text-decoration: none;
@@ -70,7 +70,7 @@ a:hover {
     color: var(--color-hamburger);
 }
 
-.btn-toggle-switch { /* Styling på toggle-knappen */
+.btn-toggle-switch {
     display: flex;
     align-items: center;
     gap: 10px;

@@ -91,7 +91,7 @@ a:hover {
   display: none;
 }
 
-.nav-link { /* Stylar "Features-länken" */
+.nav-link {
   color: var(--color-grey900);
   font-weight: 600;
   text-decoration: none;
@@ -131,7 +131,7 @@ a:hover {
   color: var(--color-hamburger);
 }
 
-.btn-toggle-switch { /* Styling på toggle-knappen */
+.btn-toggle-switch {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -286,7 +286,7 @@ a:hover {
   display: none;
 }
 
-.brand-box { /* Styla alla brand-boxar */
+.brand-box {
   box-sizing: border-box;
   border: 2px solid #E2E5F1;
   border-radius: 0.5rem;
@@ -370,8 +370,8 @@ h3 {
 .section-3 {
   padding-bottom: 3rem;
   display: flex;
-  flex-direction: column; /* Staplar elementen vertikalt */
-  align-items: center; /* Centrera horisontellt */
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
@@ -441,7 +441,7 @@ h3 {
 }
 
 .btn-2 i, .btn-3 i {
-  margin-left: 0.5rem; /* Justera storleken efter behov */
+  margin-left: 0.5rem;
 }
 
 .btn-3 {
@@ -657,7 +657,7 @@ footer { /* Styla hela footern */
   padding-bottom: 1rem;
 }
 
-footer .container { /* Styla elementen i containern */
+footer .container {
   height: auto;
   color: var(--color-grey600);
   font-size: 1rem;
@@ -669,7 +669,7 @@ footer .container { /* Styla elementen i containern */
 }
 
 /* TABLET-LÄGE */
-@media (min-width: 768px) { /* Ändra i tablet-läge */
+@media (min-width: 768px) {
   /* Header */
   .header .container {
     width: 728px;
@@ -681,7 +681,7 @@ footer .container { /* Styla elementen i containern */
   .btn-toggle-switch .label {
     display: block;
   }
-  .mobile-menu { /* Styling på "hamburgermenyn" */
+  .mobile-menu {
     padding-left: 3rem;
   }
   /* MAIN */
@@ -722,7 +722,7 @@ footer .container { /* Styla elementen i containern */
     right: 2.5rem;
   }
   /* Section-1 */
-  #brands .section-1 { /* Styla brandsen i relativitet till sectionen */
+  #brands .section-1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -843,7 +843,7 @@ footer .container { /* Styla elementen i containern */
     margin-top: 2rem;
   }
   #questions .square-2, #questions .square-3 {
-    flex: 1; /* square-2 och square-3 tar lika mycket plats (hjälp från chat GPT hur man skulle göra det) */
+    flex: 1;
     text-align: center;
     margin-right: 1rem;
     padding-bottom: 1rem;
@@ -1146,7 +1146,7 @@ footer .container { /* Styla elementen i containern */
     width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto 2fr; /* Två kolumner, där box-2 tar större plats */
+    grid-template-columns: auto 2fr;
     -moz-column-gap: 0.5rem;
          column-gap: 0.5rem;
   }

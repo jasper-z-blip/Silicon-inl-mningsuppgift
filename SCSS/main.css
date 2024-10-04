@@ -38,7 +38,7 @@ body.dark-mode {
   --color-grey400: #D4D7E5;
   --color-grey500: #B4B7C9;
   --color-grey600: #9397AD;
-  --color-grey700: #565973;
+  --color-grey700: #9397AD;
   --color-grey800: #33354D;
   --color-grey900: #FFFFFF;
   --color-primary: #6366F1;
@@ -59,6 +59,39 @@ body.dark-mode {
   --custom-gradient-desktop: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(30, 30, 30, 0.85) 50%, rgba(60, 60, 60, 0.6) 100%);
   --custom-gradient: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(50, 50, 50, 1) 20%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.5) 60%, rgba(50, 50, 50, 1) 80%, rgba(0, 0, 0, 1) 100%);
   --transition-time: 0.4s;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body, section, div, header, footer, main, nav, blockquote, p, span {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: var(--color-grey700);
+}
+
+p, a, span, li {
+  color: var(--color-grey700);
+}
+
+h1, h2, h3 {
+  color: var(--color-grey900);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
 }
 
 /* HEADER */
@@ -651,7 +684,7 @@ h3 {
 }
 
 /* FOOTER */
-footer { /* Styla hela footern */
+footer {
   background-color: var(--color-white);
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -668,8 +701,12 @@ footer .container {
   text-align: center;
 }
 
+.credit {
+  color: palevioletred;
+}
+
 /* TABLET-LÄGE */
-@media (min-width: 768px) {
+@media (min-width: 768px) { /* Ändra i tablet-läge */
   /* Header */
   .header .container {
     width: 728px;
@@ -681,7 +718,7 @@ footer .container {
   .btn-toggle-switch .label {
     display: block;
   }
-  .mobile-menu {
+  .mobile-menu { /* Styling på "hamburgermenyn" */
     padding-left: 3rem;
   }
   /* MAIN */
@@ -722,7 +759,7 @@ footer .container {
     right: 2.5rem;
   }
   /* Section-1 */
-  #brands .section-1 {
+  #brands .section-1 { /* Styla brandsen i relativitet till sectionen */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -843,7 +880,7 @@ footer .container {
     margin-top: 2rem;
   }
   #questions .square-2, #questions .square-3 {
-    flex: 1;
+    flex: 1; /* square-2 och square-3 tar lika mycket plats (hjälp från chat GPT hur man skulle göra det) */
     text-align: center;
     margin-right: 1rem;
     padding-bottom: 1rem;
@@ -1146,7 +1183,7 @@ footer .container {
     width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto 2fr;
+    grid-template-columns: auto 2fr; /* Två kolumner, där box-2 tar större plats */
     -moz-column-gap: 0.5rem;
          column-gap: 0.5rem;
   }
@@ -1244,33 +1281,4 @@ footer .container {
     padding-left: 0;
     padding-right: 0;
   }
-}
-* {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-body, section, div, header, footer, main, nav, blockquote, p, span {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-}
-body p, body a, body span {
-  color: var(--color-grey700);
-}
-body h1, body h2, body h3 {
-  color: var(--color-grey900);
-}
-
-.wrapper {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  min-height: 100vh;
 }/*# sourceMappingURL=main.css.map */

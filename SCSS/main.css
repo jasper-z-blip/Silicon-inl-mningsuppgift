@@ -1,5 +1,5 @@
 @charset "UTF-8";
-:root { /* Samlar variabler */
+:root {
   /* Light-mode */
   --color-grey100: #F3F6FF;
   --color-grey200: #EFF2FC;
@@ -78,14 +78,14 @@ body {
   font-style: normal;
   font-size: 16px;
   color: var(--color-grey700);
-}
 
-p, a, span, li {
-  color: var(--color-grey700);
-}
-
-h1, h2, h3 {
-  color: var(--color-grey900);
+  p, a, span, li {
+    color: var(--color-grey700);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-grey900);
+  }
 }
 
 .wrapper {
@@ -478,7 +478,7 @@ h3 {
 }
 
 .btn-3 {
-  width: 11rem;
+  width: 11.5rem;
 }
 
 /* SECTION-5 */
@@ -699,10 +699,6 @@ footer .container {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.credit {
-  color: palevioletred;
 }
 
 /* TABLET-LÄGE */

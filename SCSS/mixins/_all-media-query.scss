@@ -1,5 +1,5 @@
 /* TABLET-LÄGE */
-@media (min-width: 768px) { /* Ändra i tablet-läge */
+@media (min-width: 768px) {
     /* Header */
 .header .container { 
     width: 728px;
@@ -13,7 +13,7 @@
     display: block;
 }
 
-.mobile-menu { /* Styling på "hamburgermenyn" */
+.mobile-menu {
    padding-left: 3rem;
 }
 
@@ -66,7 +66,7 @@
 }     
 
     /* Section-1 */
-#brands .section-1 { /* Styla brandsen i relativitet till sectionen */
+#brands .section-1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -213,7 +213,7 @@
     }
         
     .square-2, .square-3 {
-        flex: 1; /* square-2 och square-3 tar lika mycket plats (hjälp från chat GPT hur man skulle göra det) */
+        flex: 1;
         text-align: center;
         margin-right: 1rem;   
         padding-bottom: 1rem;  

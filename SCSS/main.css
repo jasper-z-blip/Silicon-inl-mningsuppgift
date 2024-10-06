@@ -39,7 +39,7 @@ body.dark-mode {
   --color-grey500: #B4B7C9;
   --color-grey600: #9397AD;
   --color-grey700: #9397AD;
-  --color-grey800: #33354D;
+  --color-grey800: #FFFFFF;
   --color-grey900: #FFFFFF;
   --color-primary: #6366F1;
   --color-chevron: #FFFFFF;
@@ -427,6 +427,11 @@ h2 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+#how-does-it-work .how {
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 0;
+}
 .section-3 .mobile-text {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -519,6 +524,12 @@ h2 {
   margin-right: 1.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.box-1 {
+  h2 {
+    font-size: 2rem
+  }
 }
 
 .mobile-version, .mobile-version-1, .mobile-version-text, .square, .square-1 {
@@ -716,8 +727,12 @@ footer .container {
   text-align: center;
 }
 
+.copyright, .credit {
+  color: var(--color-grey500);
+}
+
 /* TABLET-LÄGE */
-@media (min-width: 768px) { /* Ändra i tablet-läge */
+@media (min-width: 768px) {
   /* Header */
   .header .container {
     width: 728px;
@@ -729,7 +744,7 @@ footer .container {
   .btn-toggle-switch .label {
     display: block;
   }
-  .mobile-menu { /* Styling på "hamburgermenyn" */
+  .mobile-menu {
     padding-left: 3rem;
   }
   /* MAIN */
@@ -769,7 +784,7 @@ footer .container {
     right: 2.5rem;
   }
   /* Section-1 */
-  #brands .section-1 { /* Styla brandsen i relativitet till sectionen */
+  #brands .section-1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -812,7 +827,7 @@ footer .container {
   }
   #how-does-it-work .frame {
     position: absolute;
-    top: 17.8%;
+    top: 13.6%;
     left: 50%;
     transform: translateX(-50%);
     height: -moz-fit-content;
@@ -1100,11 +1115,13 @@ footer .container {
     display: block;
   }
   #how-does-it-work .desktop-text h2 {
-    font-weight: 800;
+    font-weight: 700;
+    padding-left: 3rem;
   }
-  #how-does-it-work h1 {
-    font-weight: 900;
+  #how-does-it-work .how {
+    font-weight: 600;
     font-size: 3rem;
+    padding: 0;
   }
   #how-does-it-work p {
     font-size: 0.8rem;
@@ -1181,10 +1198,10 @@ footer .container {
     display: block;
   }
   .rew-light {
-    display: block; /* Visa innehåll i ljust läge */
+    display: block;
   }
   .rew-dark {
-    display: none; /* Göm innehåll i ljust läge */
+    display: none;
   }
   .section-5 {
     background-color: var(--color-grey100);
@@ -1232,8 +1249,10 @@ footer .container {
   #questions .section-6 {
     width: 1200px;
     margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     display: grid;
-    grid-template-columns: auto 2fr; /* Två kolumner, där box-2 tar större plats */
+    grid-template-columns: auto 2fr;
     -moz-column-gap: 0.5rem;
          column-gap: 0.5rem;
   }

@@ -299,7 +299,7 @@ header .container {
         width: 1200px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: auto 2fr; /* Två kolumner, där box-2 tar större plats */
+        grid-template-columns: auto 2fr;
         column-gap: .5rem; 
     }
 

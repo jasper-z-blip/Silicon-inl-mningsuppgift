@@ -288,9 +288,15 @@ a:hover {
   color: var(--color-chevron);
   font-size: 0.9rem;
 }
+#hero .disc-more:hover {
+  color: var(--color-purple);
+}
 #hero .content {
   grid-area: content;
   text-align: center;
+}
+#hero .content:hover {
+  color: var(--color-purple);
 }
 #hero .content p {
   font-size: 0.9rem;
@@ -304,9 +310,6 @@ a:hover {
   gap: 1.5rem;
   margin-top: 1.5rem;
   padding-bottom: 2rem;
-}
-#hero .content .discover-more:hover {
-  color: var(--color-purple);
   text-decoration: none;
 }
 #hero .content .btn-circle {
@@ -614,7 +617,7 @@ h2 {
   margin-top: 1rem;
 }
 
-.contact-button:hover {
+button.contact-button:hover {
   background-color: var(--color-purple);
   transform: scale(1.1);
 }
